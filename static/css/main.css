@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+
 body {
-    font-family: "ubuntu", sans-serif;
+    font-family: "Manjari", sans-serif;
     font-weight: 400;
     color: #333;
     line-height: 1.6;
     font-size: 16px;
+    background-color: white;
 }
 
 a, a:hover {
@@ -89,7 +92,7 @@ a:hover {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: raleway,sans-serif;
+    font-family: raleway, sans-serif;
     line-height: 1.2;
     color: #333;
     font-weight: 200;
@@ -205,6 +208,12 @@ pre code {
     margin-top: 50px;
 }
 
+img.logo {
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+}
+
 .header {
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -224,12 +233,13 @@ pre code {
 
 .header nav {
     margin-top: 20px;
-    border-top: 1px solid #f4f4f4;
+    /* border-top: 1px solid #f4f4f4; */
 }
 
 .header nav ul,
 .header nav li {
     margin: 0;
+    text-align: center;
 }
 
 .header nav ul.flat {
@@ -262,11 +272,18 @@ pre code {
     max-height: 15px;
 }
 
+.home-about {
+    background-color: #F5F3F4;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
 .section .section-header {
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
-    color: #999;
+    color: #B1A7A6;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
@@ -278,8 +295,8 @@ pre code {
 .recent-posts .posts .post .meta,
 .post .post-header .meta,
 .list .posts .post .meta {
-    font-size: 0.725rem;
-    color: #999;
+    font-size: 1rem;
+    color: #B1A7A6;
     margin-bottom: 4px;
 }
 
@@ -332,12 +349,16 @@ pre code {
 }
 
 .footer {
-    text-align: right;
+    text-align: center;
     font-size: 0.75em;
-    color: #999;
-    border-top: 1px solid #f4f4f4;
+    color: #BA181B;
+    border-top: 1px solid #F5F3F4;
     padding: 20px 0;
     margin-top: 40px;
+}
+
+.footer .social a {
+    padding-right: 4px;
 }
 
 .page-title {

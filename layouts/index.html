@@ -3,9 +3,12 @@
 {{ partial "header.html" . }}
 <body>
 	<div class="container wrapper">
+		{{ partial "logo.html" . }}
 		{{ partial "head.html" . }}
 
-		{{ with .Content }}{{ . }}{{ end }}
+		<div class="home-about">
+			{{ with .Content }}{{ . }}{{ end }}
+		</div>
 
 		<div class="recent-posts section">
 			<h2 class="section-header">
@@ -17,7 +20,8 @@
 				{{ range $paginator.Pages }}
 				<div class="post">
 					<div class="meta">{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
-					<a class="title" href="{{ .RelPermalink }}">{{.Title}}</a> &mdash;
+					<a class="title" href="{{ .RelPermalink }}">{{.Title}}</a>
+					<br />
 					<span class="description">
 						{{ if isset .Params "description" }}
 						{{ .Description }}

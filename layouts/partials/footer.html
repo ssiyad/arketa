@@ -1,6 +1,11 @@
 <div class="footer wrapper">
+	<div class="social">
+		{{- range $index, $key := .Site.Params.Social -}}
+			<a href="{{ $key.url }}" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
+		{{- end -}}
+	</div>
 	<nav class="nav">
-		<div>{{ with .Site.Copyright }} {{ . }} | {{ end }} <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+		Copyright {{ now.Year }} {{ .Site.Title }}
 	</nav>
 </div>
 
