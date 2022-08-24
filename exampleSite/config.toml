@@ -12,13 +12,10 @@ PygmentsCodeClasses = true
 PygmentsCodeFencesGuessSyntax = true
 
 # googleAnalytics = "UA-123-45"
-# disqusShortname = "ezhil-demo"
 
 summaryLength = 20
 
 [params]
-	subtitle = "Clean and minimal personal [blog theme for Hugo](https://github.com/vividvilla/ezhil)"
-	disableDisqusTypes = ["page"]
 	mode = "auto" # "dark", "auto", "light"
 	# customCSS = "css/custom.css"  # Custom CSS applied to default styles.
 	# customDarkCSS = "css/custom-dark.css"  # Custom styles applied to dark mode css.

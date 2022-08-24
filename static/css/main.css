@@ -220,6 +220,7 @@ img.logo {
     height: 64px;
     width: 64px;
     border-radius: 100%;
+    object-fit: cover;
 }
 
 .header {
