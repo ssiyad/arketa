@@ -180,8 +180,8 @@ ul {
 }
 
 .site-title a {
-	color: var(--color-foreground);
-	text-decoration: none !important;
+    color: var(--color-foreground);
+    text-decoration: none !important;
 }
 
 .post ul li {
@@ -200,7 +200,7 @@ ul {
 }
 
 pre code {
-  display: inline-block;
+    display: inline-block;
 }
 
 code, kbd, pre, samp {
@@ -316,7 +316,7 @@ img.logo {
 }
 
 .post-tags a {
-	margin-right: 5px;
+    margin-right: 5px;
 }
 
 .post .post-header .meta {
