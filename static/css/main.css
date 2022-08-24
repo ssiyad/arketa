@@ -408,13 +408,17 @@ img.logo {
     text-align: right;
 }
 
+table {
+    border: 1px solid var(--color-5);
+    border-radius: 8px;
+}
+
 table th {
     background-color: var(--color-5);
 }
 
 table th, table td {
     padding: 10px 20px;
-    border: 1px solid var(--color-1);
 }
 
 @media (max-width: 767px) {
