@@ -357,11 +357,14 @@ img.logo {
 
 .footer {
     text-align: center;
-    font-size: 0.75em;
     color: var(--color-2);
     border-top: 1px solid var(--color-5);
     padding: 20px 0;
     margin-top: 40px;
+}
+
+.footer .nav {
+    font-size: 0.75em;
 }
 
 .footer .social a {

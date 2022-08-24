@@ -1,7 +1,7 @@
 <div class="footer wrapper">
 	<div class="social">
 		{{- range $index, $key := .Site.Params.Social -}}
-			<a href="{{ $key.url }}" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
+			<a href="{{ $key.url }}" title="{{ $key.name }}"><ion-icon name="{{ $key.icon }}"></ion-icon></a>
 		{{- end -}}
 	</div>
 	<nav class="nav">
@@ -12,6 +12,5 @@
 {{ if not .Site.IsServer }}
 {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}
-{{- with .Site.Params.Social -}}
-<script>feather.replace()</script>
-{{- end -}}
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

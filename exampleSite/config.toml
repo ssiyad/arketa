@@ -19,7 +19,6 @@ summaryLength = 20
 [params]
 	subtitle = "Clean and minimal personal [blog theme for Hugo](https://github.com/vividvilla/ezhil)"
 	disableDisqusTypes = ["page"]
-	featherIconsCDN = true
 	mode = "auto" # "dark", "auto", "light"
 	# customCSS = "css/custom.css"  # Custom CSS applied to default styles.
 	# customDarkCSS = "css/custom-dark.css"  # Custom styles applied to dark mode css.
@@ -47,22 +46,22 @@ weight = 4
 
 [[params.social]]
 name = "Instagram"
-icon = "instagram"
+icon = "logo-instagram"
 url = "https://github.com/vividvilla/ezhil"
 
 [[params.social]]
 name = "Twitter"
-icon = "twitter"
+icon = "logo-twitter"
 url = "https://github.com/vividvilla/ezhil"
 
 [[params.social]]
 name = "Github"
-icon = "github"
+icon = "logo-github"
 url = "https://github.com/vividvilla/ezhil"
 
 [[params.social]]
 name = "RSS"
-icon = "rss"
+icon = "logo-rss"
 url = "/index.xml"
 
 [taxonomies]

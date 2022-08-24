@@ -70,9 +70,6 @@ summaryLength = 20
     # Content types which are excludes Disqus comments.
     disableDisqusTypes = ["page"]
 
-    # If social media links are enabled then enable this to fetch icons from CDN instead of hosted on your site.
-    featherIconsCDN = true
-
     # Specify favicon (icons/i.png maps to static/icons/i.png). No favicon if not defined.
     favicon = "icons/myicon.png"
 
@@ -114,7 +111,7 @@ url = "/tags"
 weight = 4
 
 # Social media links which shows up on site header.
-# Uses feather icons for icons. You can [search icon names from here](https://feathericons.com/).
+# Uses ionicons for icons. You can [search icon names from here](https://ionic.io/ionicons).
 [[params.social]]
 name = "Github"
 icon = "github"
@@ -162,5 +159,5 @@ You can also disable Disqus for certain content types by using site param `disab
 
 ## Credits
 
-* [Feather Icons](https://feathericons.com/)
+* [Ionicons](https://ionic.io/ionicons)
 * [Zen habits](https://zenhabits.net/) for demo content
