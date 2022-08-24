@@ -2,6 +2,8 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Arketa"
 theme = "arketa"
+copyright = "Copyright Sabu Siyad"
+
 paginate = 3
 
 PygmentsStyle = "nord"
