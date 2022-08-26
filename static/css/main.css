@@ -242,7 +242,6 @@ img.logo {
 
 .header nav {
     margin-top: 20px;
-    /* border-top: 1px solid #f4f4f4; */
 }
 
 .header nav ul,
@@ -326,12 +325,12 @@ img.logo {
 }
 
 .post .draft-label {
-    color: #a00;
-    text-decoration: none;
-    padding: 2px 4px;
-    border-radius: 4px;
-    margin-left: 6px;
-    background-color: #f9f2f4;
+    color: var(--color-3);
+    padding: 4px;
+    border-radius: 8px;
+    background-color: var(--color-5);
+    font-weight: 700;
+    font-family: 'Anonymous Pro', monospace;
 }
 
 .post-tags .tags li {

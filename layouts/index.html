@@ -18,8 +18,11 @@
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 				{{ range $paginator.Pages }}
 				<div class="post">
-					<div class="meta">{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
+					<div class="meta">{{ dateFormat "Jan 2, 2006" .Date }}</div>
 					<a class="title" href="{{ .RelPermalink }}">{{.Title}}</a>
+					{{ if .Draft }}
+						<span class="draft-label">Draft</span>
+					{{ end }}
 					<br />
 					<span class="description">
 						{{ if isset .Params "description" }}

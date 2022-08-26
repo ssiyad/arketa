@@ -19,7 +19,7 @@
 			{{- if (in (.Site.Params.excludedTypes | default (slice "page")) .Type) -}}
 			{{- else -}}
 			<li class="post">
-				<a href="{{ .RelPermalink }}">{{.Title}}</a> <span class="meta">{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</span>
+				<a href="{{ .RelPermalink }}">{{.Title}}</a> {{ if .Draft }}<span class="draft-label">Draft</span>{{ end }}<span class="meta">{{ dateFormat "Jan 2, 2006" .Date }}</span>
 			</li>
 			{{- end -}}
 			{{- end -}}
