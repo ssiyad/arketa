@@ -1,6 +1,6 @@
 <div class="header">
 	<nav class="nav">
-		<img class="logo" src="/logo.jpg" />
+		{{ with .Site.Params.logo }}<img class="logo" src="{{ . }}" />{{ end }}
 		<ul class="flat">
 			{{ range .Site.Menus.main }}
 			<li>
